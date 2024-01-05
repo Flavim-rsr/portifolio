@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+/* Utilizado para criar variaveis no css, utilizar de forma global em qualquer propiedade*/
+:root {
+    --cor-primaria: #fca622;
+    --cor-secundaria: #2f2f2f;
+    --cor-terciaria: #000000;
+    --cor-header: #FFFAFA;
+    --cor-footer: #7d4511;
+    --cor-hover: #fabe51;
+
+    --fonte-principal: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+/* * Seleciona tudo que está na pagina, fazendo o reset css*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    width: 100%;
+    background-color: var(--cor-primaria);
+    color: var(--cor-header);
+    box-sizing: border-box;
+}
+
+.cabecalho__barra {
+    padding: 0.5%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    background-color: var(--cor-secundaria);
+}
+
+.cabecalho__barra__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-quartenaria);
+    text-decoration: none;
+}
+
+
+/* Para usar classes, sempre chama-las com um . antes do nome*/
+.menu {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+    
+
+}
+
+.menu__conteudo {
+    width: 65%;
+    color: #2f2f2f;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.menu__conteudo__titulo {
+    font-size: 2.5rem;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-principal);
+}
+
+.menu__conteudo__fonte {
+    font-family: var(--fonte-secundaria);
+    
+}
+
+.menu__conteudo__fonte__destaque {
+    color: var(--cor-terciaria);
+    
+}
+
+.menu__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    
+
+}
+
+.menu__links__subtitulo {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: var(--fonte-principal);
+    color: var(--cor-terciaria);
+}
+
+.menu__links__link {
+    /* background-color: #2f2f2f; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    width: 378px;
+    text-align: center;
+    border-radius: 16px;
+    padding: 21.5px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: var(--fonte-secundaria);
+    border: 2px solid var(--cor-terciaria);
+
+}
+
+.menu__links__link:hover{
+    background-color: var(--cor-hover);
+}
+
+.menu__imagem{
+    width: 20%;
+    
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.06rem;
+    font-weight: 400;
+    padding: 15px;
+
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--cor-footer);
+}
+
+@media (max-width: 1200px){
+    .cabecalho__barra {
+        justify-content: center;
+    }
+    .menu {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .menu__conteudo {
+        width: auto;
+    }
+}
+
+@media (max-width: 480px){
+    .cabecalho__barra {
+       display: flex;
+       width: 100%;
+    }
+
+
+    
+    .menu__conteudo {
+        width: 100%;
+    }
+    .menu__links__link {
+        width: 70%;
+    }
+}
