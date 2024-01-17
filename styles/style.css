@@ -6,12 +6,12 @@
 
 /* Utilizado para criar variaveis no css, utilizar de forma global em qualquer propiedade*/
 :root {
-    --cor-primaria: #fca622;
+    --cor-primaria: #000000;
     --cor-secundaria: #2f2f2f;
-    --cor-terciaria: #000000;
+    --cor-terciaria: #FF6000;
     --cor-header: #FFFAFA;
-    --cor-footer: #7d4511;
-    --cor-hover: #fabe51;
+    --cor-footer: #FF6000;
+    --cor-hover: #2f2f2f;
 
     --fonte-principal: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
@@ -61,7 +61,7 @@ body {
 
 .menu__conteudo {
     width: 65%;
-    color: #2f2f2f;
+    color: #FFFAFA;
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -132,7 +132,7 @@ body {
 footer {
     display: flex;
     justify-content: center;
-    color: var(--cor-terciaria);
+    color: #FFFAFA;
     font-family: var(--fonte-secundaria);
     font-size: 1.06rem;
     font-weight: 400;
